@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+ <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+<style>
+  .navbar-nav{
+    margin-left: auto; !important;
+  }
+  .navbar-btn{
+    margin-right: 30px;
+  }
+  .submit-btn {
+    width: 280px !important;
+    height: 59px;
+}
+  @media(min-width: 220px) and (max-width: 520px){
+.submit-btn {
+    width: 154px !important;
+    height: 59px;
+}
+}
+</style>
+</head>
+
+
+
+<body>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="image/Kontra-Logo.svg">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 150px;">
+        <li><a href="#">Explore Services</a></li>
+        <li><a href="#">Sign up/Login</a></li>
+        <button class="navbar-btn">Join as Contractor</button>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- <div class="container-fluid"> -->
+  <section class="banner-section">
+    <div class="container-fluid"> 
+     
+      <!-- start code of search box -->
+        <div class="row">
+          <div class="col-md-3"></div>
+            <div class="col-md-6">
+              <div class="search"> 
+                <div class="row">
+              <div class="col-md-8"> 
+                <div class="search-1"> <i class='fa fa-search' style="color: #F4C11C;"></i> 
+                  <input type="text"  placeholder="Electrician"> 
+                </div> 
+              </div> 
+              <div class="col-md-4"> 
+                <div class="search-2" style="display: flex;"> <i class="fa-solid fa-location-dot"></i>
+                  <input type="text" placeholder="96601"> 
+                    <a href="#">CHANGE</a> 
+                </div> 
+              </div>
+            </div> 
+          </div> 
+        </div>
+        </div>
+<!-- end of serch box code -->
+</div>
+<!-- start code of card of form -->
+<div class="container-fluid">
+<div class="row">
+  <div class="col-md-2"></div>
+    <div class="col-lg-8">
+        <div class="content-box mb-5 mt-5">
+            <div>
+                <h2>Provide some further details</h5>
+            </div>
+                <form class="service-form" style="padding: 20px;">
+                  <label>When do you need the service?*</label><br>
+                  <p>(Set the time and date for the job completion)</p>
+
+                  <div class="date-box">
+                    <div class="row">
+                      <div class="col-md-4">
+                  <input placeholder="Date*" class="form-control" type="text" onfocus="(this.type = 'date')"  id="date">
+                </div>
+                <div class="col-md-4">
+
+                  <input placeholder="Time Slot" class="form-control" type="text" onfocus="(this.type = 'time')"  id="time">
+                </div>
+                </div>
+                </div>
+                  <hr>
+
+                  <label>How many quotes do you need?*</label><br>
+                  <p>(Setting the max can help you find the best deal. Setting the minimum can get the job done faster.)</p>
+
+                  <div class="pagination-box">
+                    <ul>
+                      <li>1</li>
+                      <li>2</li>
+                      <li>3</li>
+                      <li style="background: #F4C11C;">4</li>
+                      <li>5</li>
+                    </ul>
+                  </div>
+
+                  <hr>
+                  <label>What is your budget?</label><br>
+                  <p>(An estimate. The range helps us to provide you with the best match.)</p>
+
+                  <div class="usd">
+                    <div class="row">
+                      <div class="col-md-6 pt-3">
+                    <label class="pl-2">from (in USD)</label>
+                    <input type="text" name="from-usd" class="form-control" placeholder="$">
+                  </div>
+                  <div class="col-md-6 pt-3">
+                    <label class="ml-2">to (in USD)</label><br>
+                    <input type="text" name="to-usd" class="form-control" placeholder="$">
+                  </div>
+                  </div>
+                  <hr>
+
+                  <label>If the material is required, who’s buying the material?*</label>
+
+                  <div class="job-radio">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>
+                      <input type="radio" name=""><span>Contractor</span>
+                     </label>
+                    </div>
+                    <div class="col-md-6">
+                      <label>
+                       <input type="radio" name=""><span>You</span>
+                       </label>
+                    </div>
+                  </div>
+                </div>
+
+                <hr>
+                 <label>Describe something about the work</label><br>
+                 
+                  <div class="usd1 mb-5">
+                    <div class="row">
+                      <div class="col-md-12">
+                      <input type="text" name="job-booking-text" class="form-control" placeholder="Write here">
+                      </div>
+                    </div>
+                   </div>
+
+
+
+
+
+
+<div class="row">
+  <div class="submit-btn-box">
+  <button class="submit-btn">Proceed to fill Address Details</button>
+  </div>
+</div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of card form code -->
+
+<!-- </div> -->
+
+  </section>
+<!-- </div> -->
+
+<!-- footer section start -->
+<section class="footer" style="background: #272727;">
+<div class="container">
+  <div class="row">
+    <div class="footer-list">
+    <div class="row">
+      <div class="col-md-10">
+        <ul class="link-list">
+          <li>About us</li>
+          <li>How it works</li>
+          <li>Contact us</li>
+          <li>Terms & condition</li>
+          <li>Privacy policy</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <ul class="social-icon">
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- footer list code end -->
+
+<!-- footer menus code start -->
+<div class="row">
+  <div class="footer-list-menu">
+    <div class="row">
+  <div class="col-md-4 col-xs-6">
+    <div class="footer-menu">
+      <h4>Useful links</h4>
+      <ul>
+        <li>How it works</li>
+        <li>Get the app</li>
+        <li>Services near me</li>
+        <li>Sign up / Sign in</li>
+        <li>Kontra for contactors</li>
+        <li>Customer Reviews</li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-4 col-xs-6">
+    <div class="footer-menu">
+    <h4>Support</h4>
+      <ul>
+        <li>Need Help ? Get Help ?</li>
+        <li>Covid -19 info</li>
+        <li>Do not sell my info</li>
+        <li>How Escrow works ?</li>
+      
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-4"></div>
+</div>
+</div>
+</div>
+
+<!-- footer menus code end -->
+
+<!-- copyright section start -->
+<div class="row pb-3">
+  <div class="col-md-4"></div>
+  <div class="col-md-1">
+  <span class="copyright-section">
+    <img src="image/Vector-logo.png"><img src="image/vector-footer-logo.png" style="margin-left: -12px;
+    height: 15px;width: 15px;">
+  </span>
+</div>
+<div class="col-md-3">
+  <span>
+    <p style="color: white;"> 2022 Kontra , inc.</p>
+  </span>
+</div>
+<!-- copyright section end -->
+</div>
+</section>
+
+
+<script>
+  $(document).ready(onLoad);
+
+function onLoad() {
+  $('label').on('keydown', onKeyDown);
+}
+
+function onKeyDown(e) {
+  const enterKey = 13;
+  const spaceKey = 32;
+  if (e.keyCode === enterKey || e.keyCode === spaceKey) {
+    $('#upload').click();
+  }
+}
+
+</script>
+</body>
+</html>
